@@ -15,7 +15,7 @@
 - Removing rows based on a condition
 - Change the type of columns (to_numeric, to_datetime..)
 
-#### Once we have cleaned up our data a bit, we move the data exploration section. In this section we explore 5 high level business questions related to our data.
+#### Once we have cleaned up our data a bit, we move the data exploration section. In this section we explore 11 high level business questions related to our data.
 - What is the most ordered product in the store ?
 - What is the relationship between the average selling price of products and the quantity of orders placed ?
 - What are the top 5 cities with the highest number of orders placed ?
