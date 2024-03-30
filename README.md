@@ -1,4 +1,5 @@
 ## Analysis Data of Sales with Python
+![Hình minh họa](https://storage.googleapis.com/kaggle-datasets-images/1525710/2518637/d053027dd353d725ca007d9806f32ca2/dataset-cover.jpg?t=2021-08-11-20-33-26)
 ### I. About the Dataset
 #### The dataset consists of 11 columns, each column representing an attribute of purchase on a product
 - Order ID: A unique ID for each order placed on a product
