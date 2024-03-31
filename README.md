@@ -21,7 +21,7 @@
 - What is the relationship between the average selling price of products and the quantity of orders placed ?
 - What are the top 5 cities with the highest number of orders placed ?
 - What is the number of products ordered per hour ?
-- What time should we display advertisemens to maximize the likelihood of customer’s buying product ?
+- What time should we display advertisemens to maximize the likelihood of customer’s buying product?
 - What is the total sales revenue of the store for each month ?
 - Which product is the best-selling ?
 - What is the highest selling price for a product ?
