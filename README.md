@@ -1,65 +1,45 @@
-## Analysis Data of Sales with Python
-![Hình minh họa](https://github.com/Bang1710/Analysis_Data_of_Sales_with_Python/blob/main/ImageCover.jpg)
-### I. Tóm tắt dự án đầu tiên:
-Dữ liệu của dự án bao gồm 11 cột, đại diện cho các thuộc tính liên quan đến việc mua sản phẩm. Các cột chính gồm:
-
-- **Order ID:** Mã đơn hàng duy nhất cho mỗi giao dịch.
-- **Product:** Sản phẩm được mua.
-- **Quantity Ordered:** Số lượng sản phẩm đã được đặt hàng.
-- **Price Each:** Giá của mỗi sản phẩm.
-- **Order Date:** Ngày đặt hàng.
-- **Purchase Address:** Địa chỉ giao hàng.
-- **Month, Sales, City, Hour:** Các thuộc tính bổ sung được tạo từ dữ liệu trên để phục vụ việc phân tích.
+### I. Tóm tắt dữ liệu:
+Dữ liệu dự án bao gồm các thuộc tính chính như Order ID, Product, Quantity Ordered, Price Each, Order Date, và Purchase Address. Các thuộc tính bổ sung như Month, Sales, City, và Hour đã được tạo ra để phục vụ việc phân tích.
 
 ### II. Quá trình làm sạch dữ liệu:
-Trong quá trình làm sạch, các công việc sau đã được thực hiện:
+Các bước làm sạch dữ liệu đã được thực hiện bao gồm:
+- Loại bỏ giá trị NaN và hàng dữ liệu không hợp lệ.
+- Chuyển đổi kiểu dữ liệu cho các cột (số, ngày tháng, v.v.).
 
-- Loại bỏ các giá trị NaN (không có dữ liệu).
-- Xóa các hàng dữ liệu không hợp lệ dựa trên điều kiện nhất định.
-- Chuyển đổi kiểu dữ liệu phù hợp cho các cột (sang kiểu số, ngày tháng, v.v.).
+### III. Câu hỏi phân tích và Insight:
 
-Sau khi dữ liệu đã được làm sạch, các câu hỏi phân tích dữ liệu chính được đặt ra:
+1. **Sản phẩm nào được đặt hàng nhiều nhất trong cửa hàng?**
+   - **Phân tích:** Tìm sản phẩm có số lượng đặt hàng cao nhất. Sẽ cho biết sản phẩm nào được khách hàng yêu thích nhất.
 
-### III. Câu hỏi phân tích:
+2. **Mối quan hệ giữa giá bán trung bình của sản phẩm và số lượng đơn hàng được đặt là gì?**
+   - **Phân tích:** Đánh giá liệu sản phẩm có giá bán cao hơn có làm giảm số lượng đơn hàng không. Sẽ giúp hiểu sự ảnh hưởng của giá cả đến hành vi mua sắm của khách hàng.
 
-1. **Sản phẩm nào được đặt mua nhiều nhất trong cửa hàng?**
-   - Phân tích dữ liệu sẽ trả lời xem sản phẩm nào có số lượng đặt hàng cao nhất.
+3. **5 thành phố có doanh thu bán hàng cao nhất là những thành phố nào?**
+   - **Phân tích:** Xác định các thành phố với doanh thu bán hàng cao nhất. Có thể giúp chỉ ra những khu vực tiềm năng cho chiến lược tiếp thị và phân phối.
 
-2. **Mối quan hệ giữa giá bán trung bình của sản phẩm và số lượng đơn hàng?**
-   - Xác định liệu sản phẩm có giá cao hơn có bị ảnh hưởng đến số lượng đơn hàng hay không.
+4. **Số lượng sản phẩm được đặt hàng mỗi giờ là bao nhiêu?**
+   - **Phân tích:** Phân tích số lượng đơn hàng theo từng giờ trong ngày để xác định thời điểm cao điểm và thấp điểm. Điều này có thể hỗ trợ trong việc lập kế hoạch và tối ưu hóa các chiến dịch quảng cáo.
 
-3. **5 thành phố có số lượng đơn hàng cao nhất là gì?**
-   - Xác định các thành phố nào có số lượng giao dịch mua hàng trực tuyến lớn nhất.
+5. **Thời điểm nào nên hiển thị quảng cáo để tối đa hóa khả năng khách hàng mua sản phẩm?**
+   - **Phân tích:** Dựa trên dữ liệu giờ đặt hàng, xác định thời điểm tốt nhất để hiển thị quảng cáo nhằm tăng khả năng chuyển đổi.
 
-4. **Số lượng sản phẩm được đặt theo từng giờ trong ngày?**
-   - Phân tích số lượng đơn hàng theo giờ giúp hiểu rõ thời điểm khách hàng đặt hàng nhiều nhất.
+6. **Doanh thu bán hàng tổng cộng của cửa hàng cho từng tháng là bao nhiêu?**
+   - **Phân tích:** Phân tích doanh thu hàng tháng để đánh giá sự biến động theo mùa và tìm cơ hội cải thiện doanh thu.
 
-5. **Thời điểm tốt nhất để hiển thị quảng cáo nhằm tối đa hóa khả năng mua hàng của khách hàng?**
-   - Sử dụng dữ liệu về thời gian để đưa ra gợi ý cho chiến lược quảng cáo hiệu quả.
+7. **Sản phẩm nào là bán chạy nhất?**
+   - **Phân tích:** Tìm sản phẩm có doanh thu cao nhất, không chỉ dựa trên số lượng mà còn doanh thu tổng cộng.
 
-6. **Doanh thu tổng thể của cửa hàng trong mỗi tháng là bao nhiêu?**
-   - Phân tích doanh thu theo tháng để tìm ra tháng có doanh thu cao nhất.
+8. **Giá bán của sản phẩm bán chạy nhất là bao nhiêu?**
+   - **Phân tích:** Xác định mức giá của sản phẩm bán chạy nhất để có cái nhìn rõ hơn về giá cả và sức mua của sản phẩm này.
 
-7. **Sản phẩm nào bán chạy nhất?**
-   - Xác định sản phẩm có doanh thu tốt nhất, không chỉ dựa trên số lượng bán mà còn doanh thu.
-
-8. **Giá bán cao nhất cho một sản phẩm là bao nhiêu?**
-   - Xác định mức giá cao nhất từng được trả cho một sản phẩm trong cửa hàng.
-
-9. **Có mối tương quan nào giữa giá của sản phẩm và số lượng đơn hàng?**
-   - Kiểm tra xem sản phẩm đắt tiền hơn có dẫn đến ít đơn hàng hơn không.
-
-10. **Sự phân bố của giá cả giữa các sản phẩm trong cửa hàng như thế nào?**
-    - Kiểm tra xem liệu có sự khác biệt đáng kể giữa giá của các loại sản phẩm khác nhau.
-
-11. **5 thành phố có tỷ lệ đặt hàng trực tuyến cao nhất là gì?**
-    - Xác định các thành phố có tỷ lệ mua hàng qua mạng lớn nhất.
+9. **Phân phối giá của các sản phẩm trong cửa hàng như thế nào? Có sự khác biệt đáng kể về giá giữa các loại sản phẩm không?**
+   - **Phân tích:** Kiểm tra sự phân phối giá cả và sự khác biệt giữa các loại sản phẩm. Điều này giúp hiểu rõ hơn về chiến lược định giá và sự đa dạng trong danh mục sản phẩm.
 
 ### IV. Insight từ dự án:
-- **Sản phẩm phổ biến nhất:** Một sản phẩm cụ thể chiếm tỷ lệ lớn đơn hàng, gợi ý rằng cửa hàng có thể tập trung tiếp thị mạnh mẽ hơn cho sản phẩm này.
-- **Mối quan hệ giá và số lượng:** Phân tích cho thấy sản phẩm có giá cao thường có số lượng đặt hàng thấp hơn, dẫn đến chiến lược định giá phù hợp là quan trọng.
-- **Thành phố dẫn đầu:** Các thành phố với số lượng đơn hàng cao nhất có thể là trọng tâm cho các chiến dịch quảng cáo địa phương.
-- **Thời gian đặt hàng:** Thời gian cụ thể trong ngày cho thấy cao điểm mua sắm, là cơ hội cho các chiến dịch quảng cáo.
-- **Doanh thu hàng tháng:** Cửa hàng có thể tối ưu hóa chiến lược tiếp thị trong các tháng có doanh thu thấp hơn để tăng cường doanh số.
+- **Sản phẩm phổ biến:** Xác định sản phẩm bán chạy nhất để có thể tập trung các nỗ lực tiếp thị và quản lý kho bãi.
+- **Mối quan hệ giá và số lượng:** Hiểu rõ ảnh hưởng của giá cả đến lượng đơn hàng để điều chỉnh chính sách giá phù hợp.
+- **Thành phố dẫn đầu:** Xác định các thành phố có doanh thu cao nhất để tối ưu hóa chiến lược quảng cáo địa phương.
+- **Thời gian đặt hàng:** Xác định thời điểm mua sắm cao điểm để tối ưu hóa chiến dịch quảng cáo.
+- **Doanh thu hàng tháng:** Tối ưu hóa các chiến lược tiếp thị và bán hàng trong các tháng có doanh thu thấp hơn để cải thiện doanh số.
 
-Dự án này giúp tối ưu hóa chiến lược kinh doanh dựa trên dữ liệu thực tế về sản phẩm, khách hàng và thời gian, nhằm cải thiện doanh thu và hiệu suất tổng thể.
+Dự án này cung cấp cái nhìn sâu sắc về hành vi của khách hàng, sản phẩm, và hiệu suất bán hàng, từ đó giúp cải thiện chiến lược kinh doanh tổng thể.
